@@ -1,0 +1,30 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+      - llvm-toolchain-precise-3.6
+    packages:
+      - g++-5
+      - clang-3.6
+
+install:
+  - sudo apt-get install libboost1.55-all-dev
+
+before_install:
+  - sudo add-apt-repository -y ppa:boost-latest/ppa
+  - sudo apt-get update -qq
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 50
+  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 50
+  - sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-5 50
+  - if [ ${CC} == "clang" ]; then
+    export CC=/usr/bin/clang-3.6 CXX=/usr/bin/clang++-3.6;
+    fi
+
+script:
+  - ./configure && make
+  - make test

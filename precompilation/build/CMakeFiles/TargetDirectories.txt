@@ -1,0 +1,6 @@
+/home/chardetm/Projects/assasim/final/precompilation/build/CMakeFiles/edit_cache.dir
+/home/chardetm/Projects/assasim/final/precompilation/build/CMakeFiles/rebuild_cache.dir
+/home/chardetm/Projects/assasim/final/precompilation/build/CMakeFiles/precompilation.dir
+/home/chardetm/Projects/assasim/final/precompilation/build/ubjsoncpp/CMakeFiles/edit_cache.dir
+/home/chardetm/Projects/assasim/final/precompilation/build/ubjsoncpp/CMakeFiles/rebuild_cache.dir
+/home/chardetm/Projects/assasim/final/precompilation/build/ubjsoncpp/CMakeFiles/UbjsonCpp.dir
